@@ -1,0 +1,3 @@
+[submodule "ropsten/DAppNodePackage-ropsten"]
+	path = ropsten/DAppNodePackage-ropsten
+	url = git@github.com:dappnode/DAppNodePackage-ropsten.git

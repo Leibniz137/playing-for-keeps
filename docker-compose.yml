@@ -1,0 +1,32 @@
+version: '3'
+services:
+  keep:
+    container_name: keep-client
+    image: novy4/keep-client:latest
+    env_file:
+    - keep-account-password.env
+    environment:
+    - LOG_LEVEL=debug
+    command: "--config /mnt/config/config.toml start"
+    networks:
+    - "dappnodepackageropsten_default"
+    ports:
+    - "3919:3919"
+    volumes:
+    - "./keep_wallet.json:/mnt/keystore/keep_wallet.json"
+    - "./keep-client/config:/mnt/config"
+    - "persistence:/mnt/persistence"
+      #   geth:
+      #     container_name: geth 
+      #     image: ethereum/client-go
+      #     entrypoint: ["sh", "-c"]
+      #     command: "'tail -f /dev/null'"
+      #     networks:
+      #     - "dappnodepackageropsten_default"
+
+volumes:
+  persistence: {}
+
+networks:
+  dappnodepackageropsten_default:
+    external: true
