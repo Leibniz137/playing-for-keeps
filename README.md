@@ -26,7 +26,7 @@ Save your generated json keyfile to `./keep_wallet.json`
 
 save your passphrase to a file like this:
 ```
-echo 'KEEP_ETHEREUM_PASSWORD=<password-goes-here>' >
+echo 'KEEP_ETHEREUM_PASSWORD=<password-goes-here>' > keep-account-password.env
 ```
 
 ### step 3: fill in config.toml
