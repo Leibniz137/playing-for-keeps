@@ -5,7 +5,7 @@ URLRPC = "http://ropsten.dnp.dappnode.eth:8545/"
 
 # Keep operator Ethereum account.
 [ethereum.account]
-Address = "0x4748afff195f87ca25654deb5b2abd57547c284a"
+Address = ""
 KeyFile = "/mnt/keystore/keep_wallet.json"
 
 # Keep contract addresses configuration.
