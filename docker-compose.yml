@@ -16,13 +16,6 @@ services:
     - "./keep_wallet.json:/mnt/keystore/keep_wallet.json"
     - "./keep-client/config:/mnt/config"
     - "persistence:/mnt/persistence"
-      #   geth:
-      #     container_name: geth 
-      #     image: ethereum/client-go
-      #     entrypoint: ["sh", "-c"]
-      #     command: "'tail -f /dev/null'"
-      #     networks:
-      #     - "dappnodepackageropsten_default"
 
 volumes:
   persistence: {}
